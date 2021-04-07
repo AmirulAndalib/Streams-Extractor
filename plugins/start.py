@@ -19,7 +19,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⭕ Join Our Channel ⭕", url="https://telegram.dog/TeleRoidGroup"),
+                    InlineKeyboardButton("⭕ Updates Channel ⭕", url="https://telegram.dog/TeleRoidGroup"),
                     InlineKeyboardButton("🛑 Support Group 🛑", url="https://telegram.dog/TeleRoid14"),
                 ],
                 [
