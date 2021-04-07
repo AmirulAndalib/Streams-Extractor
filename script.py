@@ -37,6 +37,6 @@ See <i>/help</i> for more details.
 
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
  
-⭕<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor>Github Code</a>
+⭕<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor'>Github Code</a>
 
 """
