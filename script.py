@@ -11,12 +11,12 @@ This is a bot to extract audio and subtitles from video files.
 
 Send me any video file and extract what you want :).
 
-See <i>help</i> for more details.
+See <i>/help</i> for more details.
 
 © @TeleRoid14</b>"""
 
 
-    HELP_MSG = """<b>Oye, Follow these Steps....</b>
+    HELP_MSG = """<b>Oye, Follow these Steps....🚶‍♀️</b>
 
 🌀 <i>Send me any Valid video file.</i>
 
@@ -37,6 +37,6 @@ See <i>help</i> for more details.
 
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
  
-⭕<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor
+⭕<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor>Github Code</a>
 
 """
