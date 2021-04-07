@@ -1,16 +1,16 @@
 {
     "name": "Streams Extractor Bot",
-    "description": "A bot to extract audio and subtitles from video files..",
+    "description": "A bot that can extract audio and subtitles from video files📂.....",
     "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
     "keywords": [
         "Streams",
         "Extractor",
         "Telegram Bot",
-        "TroJanzHEX"
+        "TeleRoid"
     ],
-    "website": "https://TroJanzHEX.me",
-    "repository": "https://github.com/TroJanzHEX/Streams-Extractor",
-    "success_url": "https://telegram.dog/TroJanzHEX",
+    "website": "https://telegram.dog/TheTeleRoid",
+    "repository": "https://github.com/TeamTeleRoid/Streams-Extractor",
+    "success_url": "https://telegram.dog/TeleRoidGroup",
     "env": {
         "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
@@ -26,7 +26,7 @@
         },
         "AUTH_USERS": {
             "description": "Id of users that can use the bot, from @MissRose_bot by /id command",
-            "value": ""
+            "value": "1287407305"
         }
     },
     "addons": [],
