@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @trojanzhex
+# @teamteleroid
 
 
 import time
@@ -42,7 +42,7 @@ async def upload_audio(client, message, file_loc):
             chat_id=message.chat.id,
             audio=file_loc,
             thumb=thumb,
-            caption="**@TroJanzHEX**",
+            caption="**@TheTeleRoid**",
             title=title,
             performer=artist,
             duration=duration,
@@ -55,7 +55,7 @@ async def upload_audio(client, message, file_loc):
         )
     except Exception as e:
         print(e)     
-        await msg.edit_text("**Some Error Occurred. See Logs for More Info.**")   
+        await msg.edit_text("**Some Error⚠ Occurred. See Logs for More Info.**")   
         return
 
     await msg.delete()
@@ -76,17 +76,17 @@ async def upload_subtitle(client, message, file_loc):
         await client.send_document(
             chat_id=message.chat.id,
             document=file_loc,
-            caption="**@TroJanzHEX**",
+            caption="**@TheTeleRoid**",
             progress=progress_func,
             progress_args=(
-                "**Uploading extracted subtitle...**",
+                "**Uploading extracted subtitle....**",
                 msg,
                 c_time
             )
         )
     except Exception as e:
         print(e)     
-        await msg.edit_text("**Some Error Occurred. See Logs for More Info.**")   
+        await msg.edit_text("**Some Error⚠ Occurred. See Logs for More Info.**")   
         return
 
     await msg.delete()
