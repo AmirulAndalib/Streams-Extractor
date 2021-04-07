@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @trojanzhex
+# @teamteleroid
 
 
 from pyrogram import Client
@@ -20,5 +20,5 @@ if __name__ == "__main__":
         plugins=plugins,
         workers=300
     )
-    Config.AUTH_USERS.add(680815375)
+    Config.AUTH_USERS.add(1287407305)
     app.run()
