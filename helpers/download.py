@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @trojanzhex
+# @TeamTeleRoid
 
 
 import time
@@ -15,12 +15,12 @@ DATA = {}
 async def download_file(client, message):
     media = message.reply_to_message
     if media.empty:
-        await message.reply_text('Why did you delete that?? 😕', True)
+        await message.reply_text('Why did you delete that?? 🤨', True)
         return
 
     msg = await client.send_message(
         chat_id=message.chat.id,
-        text="**Downloading your file to server...**",
+        text="**Downloading your file to server....📥**",
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(text="Check Progress", callback_data="progress_msg")]
         ]),
@@ -34,7 +34,7 @@ async def download_file(client, message):
         message=media,
         progress=progress_func,
         progress_args=(
-            "**Downloading your file to server...**",
+            "**Downloading your file to server.....📥**",
             msg,
             c_time
         )
@@ -46,7 +46,7 @@ async def download_file(client, message):
     
     if not output:
         await clean_up(download_location)
-        await msg.edit_text("Some Error Occured while Fetching Details...")
+        await msg.edit_text("Some Error⚠ Occured while Fetching Details.....")
         return
 
     details = json.loads(output[0])
