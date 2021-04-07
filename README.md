@@ -18,9 +18,9 @@
   </a>  
 </p>
 
-[![TeleRoid](https://img.shields.io/badge/TroJanzHEX-Channel-orange?style=for-the-badge&logo=telegram)](https://telegram.dog/TheTeleRoid)  
+[![TeleRoid](https://img.shields.io/badge/TeleRoid-Channel-orange?style=for-the-badge&logo=telegram)](https://telegram.dog/TheTeleRoid)  
 ㅤㅤㅤㅤㅤㅤㅤ  
-[![TeleRoid](https://img.shields.io/badge/TroJanzHEX-Support-red?style=flat&logo=telegram)](https://telegram.dog/TeleRoid14)  [![TeleRoid](https://img.shields.io/badge/TeleRoid-Website-red?style=flat&logo=CodersRank)](https://t.me/TeleRoidGroup)  
+[![TeleRoid](https://img.shields.io/badge/TeleRoid-Support-red?style=flat&logo=telegram)](https://telegram.dog/TeleRoid14)  [![TeleRoid](https://img.shields.io/badge/TeleRoid-Website-red?style=flat&logo=CodersRank)](https://t.me/TeleRoidGroup)  
 ㅤㅤㅤㅤㅤㅤㅤ  
 [![MIT license](https://img.shields.io/badge/License-MIT-blue?style=flat)](https://github.com/TeamTeleRoid/Streams-Extractor/blob/main/COPYING)  [![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TroJanzHEX/Streams-Extractor)
 
