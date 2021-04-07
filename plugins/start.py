@@ -19,12 +19,12 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("HELP", callback_data="help_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("⭕ Join Our Channel ⭕", url="https://telegram.dog/TeleRoidGroup"),
+                    InlineKeyboardButton("🛑 Support Group 🛑", url="https://telegram.dog/TeleRoid14"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TheTeleRoid")
+                        "ABOUT", callback_data="about_data")
                 ]
             ]
         ),
