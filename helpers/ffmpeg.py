@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @trojanzhex
+# @teamteleroid
 
 
 from helpers.tools import execute, clean_up
@@ -22,7 +22,7 @@ async def extract_audio(client, message, data):
     else:
         out, err, rcode, pid = await execute(f"ffmpeg -i '{dwld_loc}' -map 0:{data['map']} '{out_loc}' -y")
         if rcode != 0:
-            await message.edit_text("**Error Occured. See Logs for more info.**")
+            await message.edit_text("**Error⚠ Occured. See Logs for more info.**")
             print(err)
             await clean_up(dwld_loc, out_loc)
             return
