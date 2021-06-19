@@ -15,7 +15,6 @@ from script import Script
 async def confirm_dwnld(client, message):
 
     if message.from_user.id not in Config.AUTH_USERS:
-        return
 
     media = message
     filetype = media.document or media.video
