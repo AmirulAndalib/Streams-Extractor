@@ -14,7 +14,6 @@ from script import Script
 @trojanz.on_message(filters.private & (filters.document | filters.video))
 async def confirm_dwnld(client, message):
 
-    if message.from_user.id not in Config.AUTH_USERS:
 
     media = message
     filetype = media.document or media.video
