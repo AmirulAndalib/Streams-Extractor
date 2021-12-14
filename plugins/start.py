@@ -15,7 +15,7 @@ from plugins.forcesub import ForceSub
 
 @trojanz.on_message(filters.command(["start"]) & filters.private)
 async def start(client, message):
-    forcesub = await ForceSub(bot, update)
+    forcesub = await ForceSub(client, message)
     if forcesub == 400:
         return
     await message.reply_text(
@@ -43,7 +43,7 @@ async def start(client, message):
 
 @trojanz.on_message(filters.command(["help"]) & filters.private)
 async def help(client, message):
-    forcesub = await ForceSub(bot, update)
+    forcesub = await ForceSub(client, message)
     if forcesub == 400:
         return
     await message.reply_text(
@@ -67,7 +67,7 @@ async def help(client, message):
 
 @trojanz.on_message(filters.command(["about"]) & filters.private)
 async def about(client, message):
-    forcesub = await ForceSub(bot, update)
+    forcesub = await ForceSub(client, message)
     if forcesub == 400:
         return
     await message.reply_text(
