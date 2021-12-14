@@ -23,8 +23,12 @@ async def start(client, message):
                     InlineKeyboardButton("🛑 Support 🛑", url="https://telegram.dog/TeleRoid14"),
                 ],
                 [
+                    InlineKeyboardButton("♂️ About", callback_data="about_data"),
+                    InlineKeyboardButton("🆘 Help", callback_data="help_data"),
+                ],
+                [
                     InlineKeyboardButton(
-                        "ABOUT", callback_data="about_data")
+                        "🔐 Close", callback_data="about_data")
                 ]
             ]
         ),
@@ -40,12 +44,12 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("🏡 Home ", callback_data="start_data"),
+                    InlineKeyboardButton("♂️ About", callback_data="about_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🛑 SUPPORT 🛑", url="https://t.me/TeleRoid14")
+                        "🤖 BotsList ", url="https://t.me/joinchat/t1ko_FOJxhFiOThl")
                 ]
             ]
         ),
@@ -61,8 +65,8 @@ async def about(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("START", callback_data="start_data"),
+                    InlineKeyboardButton("🆘 Help", callback_data="help_data"),
+                    InlineKeyboardButton("🏡 Home", callback_data="start_data"),
                 ],
                 [
                     InlineKeyboardButton(
