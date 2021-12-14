@@ -19,3 +19,6 @@ class Config(object):
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
     
+    #Force Subscribe to Channel
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+
