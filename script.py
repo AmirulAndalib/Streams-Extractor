@@ -16,7 +16,7 @@ See <i>/help</i> for more details.
 © @TeleRoid14</b>"""
 
 
-    HELP_MSG = """<b>Oye, Follow these Steps....🚶‍♀️</b>
+    HELP_MSG = """<b>Oye, Follow these Steps for The Process....🚶‍♀️</b>
 
 🌀 <i>Send me any Valid video file.</i>
 
@@ -29,14 +29,20 @@ See <i>/help</i> for more details.
 <b>© @TheTeleRoid</b>"""
 
 
-    ABOUT_MSG = """⭕️<b>My Name : Streams Extractor Bot</b>
+    ABOUT_MSG = """🤖<b>My Name : Streams Extractor Bot</b>
 
-⭕️<b>Creator :</b> @TheTeleRoid
+👤<b>Creator :</b> @TheTeleRoid
 
-⭕️<b>Language :</b> <code>Python3</code>
+🗒<b>Language :</b> <code>Python3</code>
 
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
+🧾<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
  
-⭕<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor'>Github Code</a>
+💰<b>Source  :</b> <a href='https://github.com/TeamTeleRoid/Streams-Extractor'>Github Code</a>
+
+⭕<b>Updates :</b> <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a>
+
+⭕<b>Support :</b> <a href='https://t.me/TeleRoid14'>@TeleRoid14</a>
+
+🚸<b>Powered By :</b> <a href='https://t.me/MoviesFlixers_DL'>@HindiWebNetwork</a>
 
 """
