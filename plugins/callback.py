@@ -22,9 +22,11 @@ async def cb_handler(client, query):
     if query.data == "start_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("HELP", callback_data="help_data"),
-                InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TeleRoidGroup")]
+            [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"),
+                InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14")],
+            [InlineKeyboardButton("🆘 Help", callback_data="help_data"),
+                InlineKeyboardButton("♂️ About", callback_data="about_data")],
+            [InlineKeyboardButton("🔐 Close", callback_data="close")]
         ])
 
         await query.message.edit_text(
@@ -38,8 +40,8 @@ async def cb_handler(client, query):
     elif query.data == "help_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("BACK", callback_data="start_data"),
-                InlineKeyboardButton("ABOUT", callback_data="about_data")],
+            [InlineKeyboardButton("🏡 Home", callback_data="start_data"),
+                InlineKeyboardButton("♂️ About ", callback_data="about_data")],
             [InlineKeyboardButton("🛑 SUPPORT 🛑", url="https://t.me/TeleRoid14")]
         ])
 
@@ -54,8 +56,8 @@ async def cb_handler(client, query):
     elif query.data == "about_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("BACK", callback_data="help_data"),
-                InlineKeyboardButton("START", callback_data="start_data")],
+            [InlineKeyboardButton("🆘 Help", callback_data="help_data"),
+                InlineKeyboardButton("🏡 Home", callback_data="start_data")],
             [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TeamTeleRoid/Streams-Extractor")]
         ])
 
@@ -75,7 +77,7 @@ async def cb_handler(client, query):
 
     elif query.data == "progress_msg":
         try:
-            msg = "Progress Details...\n\n✔ Completed : {current}\n📃Total Size : {total}\n🚀Speed : {speed}\n⏳Progress : {progress:.2f}%\n⏱ETA: {eta}"
+            msg = "Progress Details...\n\n✅ Completed : {current}\n📃 Total Size : {total}\n🚀 Speed : {speed}\n⏳ Progress : {progress:.2f}%\n⏰ ETA: {eta}"
             await query.answer(
                 msg.format(
                     **PRGRS[f"{query.message.chat.id}_{query.message.message_id}"]
@@ -104,7 +106,7 @@ async def cb_handler(client, query):
             data = DATA[keyword][int(mapping)]
             await extract_audio(client, query.message, data)
         except:
-            await query.message.edit_text("**Details Not Found**")   
+            await query.message.edit_text("** No Details Found**")   
 
 
     elif query.data.startswith('subtitle'):
@@ -114,7 +116,7 @@ async def cb_handler(client, query):
             data = DATA[keyword][int(mapping)]
             await extract_subtitle(client, query.message, data)
         except:
-            await query.message.edit_text("**Details Not Found**")  
+            await query.message.edit_text("**No Details Found**")  
 
 
     elif query.data.startswith('cancel'):
@@ -129,4 +131,4 @@ async def cb_handler(client, query):
             ) 
         except:
             await query.answer() 
-            await query.message.edit_text("**Details Not Found**")        
+            await query.message.edit_text("**No Details Found**")        
