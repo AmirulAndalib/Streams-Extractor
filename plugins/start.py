@@ -17,6 +17,7 @@ from plugins.forcesub import ForceSub
 async def start(client, message):
     forcesub = await ForceSub(bot, update)
     if forcesub == 400:
+        return
     await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
@@ -44,6 +45,7 @@ async def start(client, message):
 async def help(client, message):
     forcesub = await ForceSub(bot, update)
     if forcesub == 400:
+        return
     await message.reply_text(
         text=Script.HELP_MSG,
         disable_web_page_preview=True,
@@ -67,6 +69,7 @@ async def help(client, message):
 async def about(client, message):
     forcesub = await ForceSub(bot, update)
     if forcesub == 400:
+        return
     await message.reply_text(
         text=Script.ABOUT_MSG,
         disable_web_page_preview=True,
