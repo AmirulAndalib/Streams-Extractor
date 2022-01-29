@@ -43,7 +43,7 @@ async def download_file(client, message):
     await msg.edit_text("Processing your file....")
 
     output = await execute(f"ffprobe -hide_banner -show_streams -print_format json '{download_location}'")
-    
+
     if not output:
         await clean_up(download_location)
         await msg.edit_text("Some Error⚠ Occured while Fetching Details.....")
@@ -56,15 +56,13 @@ async def download_file(client, message):
         mapping = stream["index"]
         stream_name = stream["codec_name"]
         stream_type = stream["codec_type"]
-        if stream_type in ("audio", "subtitle"):
-            pass
-        else:
+        if stream_type not in ("audio", "subtitle"):
             continue
         try: 
             lang = stream["tags"]["language"]
         except:
             lang = mapping
-        
+
         DATA[f"{message.chat.id}-{msg.message_id}"][int(mapping)] = {
             "map" : mapping,
             "name" : stream_name,
